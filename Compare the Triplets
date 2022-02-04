@@ -1,0 +1,13 @@
+function compareTriplets(a, b) {
+    let result = [];
+    let AliceCounter = 0;
+    let BobCounter = 0;
+    
+for (let i = 0; i < a.length; i++) {
+    if (a[i] > b[i]) AliceCounter++;
+    if (a[i] < b[i]) BobCounter++;
+}
+result[0] = AliceCounter;
+result[1] = BobCounter;
+return result;
+}
