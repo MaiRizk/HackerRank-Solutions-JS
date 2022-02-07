@@ -1,0 +1,11 @@
+function findDigits(n) {
+    let divisibleDigits = 0;
+    let Number = n.toString().split("");
+    
+    Number.forEach(Number => {
+        if (n % parseInt(Number) === 0) {
+            return divisibleDigits++
+        }
+    });
+    return divisibleDigits;
+}
