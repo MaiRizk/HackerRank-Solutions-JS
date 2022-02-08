@@ -1,0 +1,13 @@
+function extraLongFactorials(n) {
+if (n <= 1) return 1;
+else
+return BigInt(extraLongFactorials(n - 1)) * BigInt(n);
+}
+
+function main() {
+    const n = parseInt(readLine(), 10);
+  
+  const result = extraLongFactorials(n).toString();
+  console.log(result);
+  
+}
